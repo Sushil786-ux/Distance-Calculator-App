@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance Calculator"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Point 1 Inputs -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Point 1 (Latitude &amp; Longitude)"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/lat1EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Latitude 1"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/lon1EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Longitude 1"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Point 2 Inputs -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Point 2 (Latitude &amp; Longitude)"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/lat2EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Latitude 2"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/lon2EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Longitude 2"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Distance"
+        android:padding="12dp"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance: --"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+</LinearLayout>
